@@ -1,0 +1,694 @@
+08-Apr-2020 11:46:28.571 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+	java.lang.UnsatisfiedLinkError: C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+		at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+		at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+		at java.lang.ClassLoader.loadLibrary(Unknown Source)
+		at java.lang.Runtime.loadLibrary0(Unknown Source)
+		at java.lang.System.loadLibrary(Unknown Source)
+		at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+		at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+		at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+		at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+		at org.apache.catalina.connector.Connector.setProtocol(Connector.java:615)
+		at org.apache.catalina.connector.Connector.<init>(Connector.java:78)
+		at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:64)
+		at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1234)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1495)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:611)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+08-Apr-2020 11:46:29.232 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.53
+08-Apr-2020 11:46:29.233 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 11 2020 10:01:39 UTC
+08-Apr-2020 11:46:29.244 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.53.0
+08-Apr-2020 11:46:29.246 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+08-Apr-2020 11:46:29.249 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Apr-2020 11:46:29.251 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+08-Apr-2020 11:46:29.253 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jre1.8.0_91
+08-Apr-2020 11:46:29.257 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b15
+08-Apr-2020 11:46:29.260 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Apr-2020 11:46:29.267 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\apache-tomcat-8.5.53
+08-Apr-2020 11:46:29.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-8.5.53
+08-Apr-2020 11:46:29.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\apache-tomcat-8.5.53\conf\logging.properties
+08-Apr-2020 11:46:29.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Apr-2020 11:46:29.288 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Apr-2020 11:46:29.304 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Apr-2020 11:46:29.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Apr-2020 11:46:29.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\apache-tomcat-8.5.53
+08-Apr-2020 11:46:29.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-8.5.53
+08-Apr-2020 11:46:29.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\apache-tomcat-8.5.53\temp
+08-Apr-2020 11:46:31.818 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+08-Apr-2020 11:46:33.001 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Apr-2020 11:46:33.202 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 6783 ms
+08-Apr-2020 11:46:33.683 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Apr-2020 11:46:33.769 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.53
+08-Apr-2020 11:46:34.364 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\docs]
+08-Apr-2020 11:46:39.018 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [2,008] milliseconds.
+08-Apr-2020 11:46:39.142 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\docs] has finished in [4,778] ms
+08-Apr-2020 11:46:39.146 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\examples]
+08-Apr-2020 11:46:44.304 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\examples] has finished in [5,158] ms
+08-Apr-2020 11:46:44.305 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager]
+08-Apr-2020 11:46:44.576 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager] has finished in [271] ms
+08-Apr-2020 11:46:44.730 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\manager]
+08-Apr-2020 11:46:45.103 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\manager] has finished in [373] ms
+08-Apr-2020 11:46:45.110 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT]
+08-Apr-2020 11:46:45.255 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT] has finished in [145] ms
+08-Apr-2020 11:46:45.286 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+08-Apr-2020 11:46:45.415 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 12053 ms
+08-Apr-2020 11:47:18.386 INFO [http-nio-8081-exec-10] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:432)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:502)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Unknown Source)
+08-Apr-2020 11:47:18.386 INFO [http-nio-8081-exec-9] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:432)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:502)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Unknown Source)
+08-Apr-2020 11:47:54.886 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+	java.lang.UnsatisfiedLinkError: C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+		at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+		at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+		at java.lang.ClassLoader.loadLibrary(Unknown Source)
+		at java.lang.Runtime.loadLibrary0(Unknown Source)
+		at java.lang.System.loadLibrary(Unknown Source)
+		at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+		at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+		at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+		at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+		at org.apache.catalina.connector.Connector.setProtocol(Connector.java:615)
+		at org.apache.catalina.connector.Connector.<init>(Connector.java:78)
+		at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:64)
+		at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1234)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1495)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:611)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+08-Apr-2020 11:47:55.278 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.53
+08-Apr-2020 11:47:55.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 11 2020 10:01:39 UTC
+08-Apr-2020 11:47:55.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.53.0
+08-Apr-2020 11:47:55.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+08-Apr-2020 11:47:55.290 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Apr-2020 11:47:55.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+08-Apr-2020 11:47:55.301 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jre1.8.0_91
+08-Apr-2020 11:47:55.303 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b15
+08-Apr-2020 11:47:55.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Apr-2020 11:47:55.309 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\apache-tomcat-8.5.53
+08-Apr-2020 11:47:55.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-8.5.53
+08-Apr-2020 11:47:55.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\apache-tomcat-8.5.53\conf\logging.properties
+08-Apr-2020 11:47:55.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Apr-2020 11:47:55.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Apr-2020 11:47:55.327 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Apr-2020 11:47:55.330 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Apr-2020 11:47:55.337 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\apache-tomcat-8.5.53
+08-Apr-2020 11:47:55.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-8.5.53
+08-Apr-2020 11:47:55.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\apache-tomcat-8.5.53\temp
+08-Apr-2020 11:47:55.859 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+08-Apr-2020 11:47:55.885 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8081]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1032)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:848)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+		at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1118)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:223)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:587)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1030)
+		... 13 more
+08-Apr-2020 11:47:55.891 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1773 ms
+08-Apr-2020 11:47:56.002 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Apr-2020 11:47:56.003 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.53
+08-Apr-2020 11:47:56.117 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\docs]
+08-Apr-2020 11:47:57.745 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [934] milliseconds.
+08-Apr-2020 11:47:57.820 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\docs] has finished in [1,704] ms
+08-Apr-2020 11:47:57.824 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\examples]
+08-Apr-2020 11:47:59.190 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\examples] has finished in [1,369] ms
+08-Apr-2020 11:47:59.195 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager]
+08-Apr-2020 11:47:59.309 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager] has finished in [117] ms
+08-Apr-2020 11:47:59.310 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\manager]
+08-Apr-2020 11:47:59.403 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\manager] has finished in [93] ms
+08-Apr-2020 11:47:59.404 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT]
+08-Apr-2020 11:47:59.480 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT] has finished in [76] ms
+08-Apr-2020 11:47:59.493 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3591 ms
+08-Apr-2020 11:47:59.512 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+		at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+		at java.net.PlainSocketImpl.bind(Unknown Source)
+		at java.net.ServerSocket.bind(Unknown Source)
+		at java.net.ServerSocket.<init>(Unknown Source)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+08-Apr-2020 11:47:59.519 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8081"]
+08-Apr-2020 11:47:59.542 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Apr-2020 11:47:59.702 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8081"]
+08-Apr-2020 11:47:59.709 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8081"]
+08-Apr-2020 11:51:25.840 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+	java.lang.UnsatisfiedLinkError: C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+		at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+		at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+		at java.lang.ClassLoader.loadLibrary(Unknown Source)
+		at java.lang.Runtime.loadLibrary0(Unknown Source)
+		at java.lang.System.loadLibrary(Unknown Source)
+		at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+		at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+		at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+		at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+		at org.apache.catalina.connector.Connector.setProtocol(Connector.java:615)
+		at org.apache.catalina.connector.Connector.<init>(Connector.java:78)
+		at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:64)
+		at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1234)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1495)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:611)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+08-Apr-2020 11:51:26.074 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.53
+08-Apr-2020 11:51:26.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 11 2020 10:01:39 UTC
+08-Apr-2020 11:51:26.095 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.53.0
+08-Apr-2020 11:51:26.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+08-Apr-2020 11:51:26.273 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Apr-2020 11:51:26.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+08-Apr-2020 11:51:26.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jre1.8.0_91
+08-Apr-2020 11:51:26.378 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b15
+08-Apr-2020 11:51:26.382 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Apr-2020 11:51:26.388 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\apache-tomcat-8.5.53
+08-Apr-2020 11:51:26.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-8.5.53
+08-Apr-2020 11:51:26.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\apache-tomcat-8.5.53\conf\logging.properties
+08-Apr-2020 11:51:26.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Apr-2020 11:51:26.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Apr-2020 11:51:26.406 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Apr-2020 11:51:26.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Apr-2020 11:51:26.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\apache-tomcat-8.5.53
+08-Apr-2020 11:51:26.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-8.5.53
+08-Apr-2020 11:51:26.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\apache-tomcat-8.5.53\temp
+08-Apr-2020 11:51:26.815 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+08-Apr-2020 11:51:26.986 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Apr-2020 11:51:27.019 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1844 ms
+08-Apr-2020 11:51:27.096 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Apr-2020 11:51:27.097 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.53
+08-Apr-2020 11:51:27.135 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\docs]
+08-Apr-2020 11:51:29.052 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,026] milliseconds.
+08-Apr-2020 11:51:29.165 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\docs] has finished in [2,031] ms
+08-Apr-2020 11:51:29.170 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\examples]
+08-Apr-2020 11:51:30.869 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\examples] has finished in [1,699] ms
+08-Apr-2020 11:51:30.873 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager]
+08-Apr-2020 11:51:30.997 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager] has finished in [124] ms
+08-Apr-2020 11:51:31.005 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\manager]
+08-Apr-2020 11:51:31.135 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\manager] has finished in [130] ms
+08-Apr-2020 11:51:31.237 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT]
+08-Apr-2020 11:51:31.406 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT] has finished in [172] ms
+08-Apr-2020 11:51:31.428 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+08-Apr-2020 11:51:31.482 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 4461 ms
+08-Apr-2020 11:51:47.784 INFO [http-nio-8081-exec-2] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:432)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:502)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Unknown Source)
+08-Apr-2020 11:51:47.785 INFO [http-nio-8081-exec-3] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:432)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:502)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:818)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1623)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Unknown Source)
+08-Apr-2020 11:54:27.659 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+	java.lang.UnsatisfiedLinkError: C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+		at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+		at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+		at java.lang.ClassLoader.loadLibrary(Unknown Source)
+		at java.lang.Runtime.loadLibrary0(Unknown Source)
+		at java.lang.System.loadLibrary(Unknown Source)
+		at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+		at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+		at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+		at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+		at org.apache.catalina.connector.Connector.setProtocol(Connector.java:615)
+		at org.apache.catalina.connector.Connector.<init>(Connector.java:78)
+		at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:64)
+		at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1234)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1495)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:611)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+08-Apr-2020 11:54:27.896 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.53
+08-Apr-2020 11:54:27.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 11 2020 10:01:39 UTC
+08-Apr-2020 11:54:27.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.53.0
+08-Apr-2020 11:54:27.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+08-Apr-2020 11:54:27.905 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Apr-2020 11:54:27.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+08-Apr-2020 11:54:27.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jre1.8.0_91
+08-Apr-2020 11:54:27.918 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b15
+08-Apr-2020 11:54:27.920 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Apr-2020 11:54:27.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\apache-tomcat-8.5.53
+08-Apr-2020 11:54:27.935 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-8.5.53
+08-Apr-2020 11:54:27.938 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\apache-tomcat-8.5.53\conf\logging.properties
+08-Apr-2020 11:54:27.940 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Apr-2020 11:54:27.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Apr-2020 11:54:27.951 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Apr-2020 11:54:27.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Apr-2020 11:54:27.955 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\apache-tomcat-8.5.53
+08-Apr-2020 11:54:27.956 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-8.5.53
+08-Apr-2020 11:54:27.964 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\apache-tomcat-8.5.53\temp
+08-Apr-2020 11:54:28.410 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+08-Apr-2020 11:54:28.437 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8081]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1032)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:552)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:848)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:639)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+		at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:221)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1118)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:223)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:587)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:74)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1030)
+		... 13 more
+08-Apr-2020 11:54:28.448 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1525 ms
+08-Apr-2020 11:54:28.544 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Apr-2020 11:54:28.545 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.53
+08-Apr-2020 11:54:28.584 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\docs]
+08-Apr-2020 11:54:30.163 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,001] milliseconds.
+08-Apr-2020 11:54:30.253 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\docs] has finished in [1,669] ms
+08-Apr-2020 11:54:30.257 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\examples]
+08-Apr-2020 11:54:31.681 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\examples] has finished in [1,424] ms
+08-Apr-2020 11:54:31.685 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager]
+08-Apr-2020 11:54:31.983 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager] has finished in [298] ms
+08-Apr-2020 11:54:31.984 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\manager]
+08-Apr-2020 11:54:32.073 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\manager] has finished in [89] ms
+08-Apr-2020 11:54:32.074 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT]
+08-Apr-2020 11:54:32.152 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT] has finished in [77] ms
+08-Apr-2020 11:54:32.166 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3714 ms
+08-Apr-2020 11:54:32.184 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+		at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+		at java.net.PlainSocketImpl.bind(Unknown Source)
+		at java.net.ServerSocket.bind(Unknown Source)
+		at java.net.ServerSocket.<init>(Unknown Source)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+08-Apr-2020 11:54:32.188 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8081"]
+08-Apr-2020 11:54:32.198 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Apr-2020 11:54:32.267 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8081"]
+08-Apr-2020 11:54:32.271 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8081"]
+08-Apr-2020 12:03:15.838 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+	java.lang.UnsatisfiedLinkError: C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+		at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+		at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+		at java.lang.ClassLoader.loadLibrary(Unknown Source)
+		at java.lang.Runtime.loadLibrary0(Unknown Source)
+		at java.lang.System.loadLibrary(Unknown Source)
+		at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+		at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+		at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+		at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+		at org.apache.catalina.connector.Connector.setProtocol(Connector.java:615)
+		at org.apache.catalina.connector.Connector.<init>(Connector.java:78)
+		at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:64)
+		at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1234)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1495)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:611)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+08-Apr-2020 12:03:16.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.53
+08-Apr-2020 12:03:16.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 11 2020 10:01:39 UTC
+08-Apr-2020 12:03:16.054 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.53.0
+08-Apr-2020 12:03:16.056 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+08-Apr-2020 12:03:16.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Apr-2020 12:03:16.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+08-Apr-2020 12:03:16.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jre1.8.0_91
+08-Apr-2020 12:03:16.066 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b15
+08-Apr-2020 12:03:16.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Apr-2020 12:03:16.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\apache-tomcat-8.5.53
+08-Apr-2020 12:03:16.077 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-8.5.53
+08-Apr-2020 12:03:16.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\apache-tomcat-8.5.53\conf\logging.properties
+08-Apr-2020 12:03:16.082 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Apr-2020 12:03:16.088 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Apr-2020 12:03:16.090 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Apr-2020 12:03:16.091 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Apr-2020 12:03:16.093 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\apache-tomcat-8.5.53
+08-Apr-2020 12:03:16.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-8.5.53
+08-Apr-2020 12:03:16.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\apache-tomcat-8.5.53\temp
+08-Apr-2020 12:03:16.524 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8010"]
+08-Apr-2020 12:03:16.653 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Apr-2020 12:03:16.686 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1431 ms
+08-Apr-2020 12:03:16.754 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Apr-2020 12:03:16.754 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.53
+08-Apr-2020 12:03:16.784 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\docs]
+08-Apr-2020 12:03:18.139 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [772] milliseconds.
+08-Apr-2020 12:03:18.194 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\docs] has finished in [1,410] ms
+08-Apr-2020 12:03:18.197 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\examples]
+08-Apr-2020 12:03:19.428 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\examples] has finished in [1,231] ms
+08-Apr-2020 12:03:19.429 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager]
+08-Apr-2020 12:03:19.522 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager] has finished in [92] ms
+08-Apr-2020 12:03:19.524 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\manager]
+08-Apr-2020 12:03:19.607 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\manager] has finished in [84] ms
+08-Apr-2020 12:03:19.610 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT]
+08-Apr-2020 12:03:19.682 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT] has finished in [75] ms
+08-Apr-2020 12:03:19.693 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8010"]
+08-Apr-2020 12:03:19.749 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3061 ms
+08-Apr-2020 12:03:19.763 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+		at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+		at java.net.PlainSocketImpl.bind(Unknown Source)
+		at java.net.ServerSocket.bind(Unknown Source)
+		at java.net.ServerSocket.<init>(Unknown Source)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+08-Apr-2020 12:03:19.766 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8010"]
+08-Apr-2020 12:03:20.431 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Apr-2020 12:03:20.477 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8010"]
+08-Apr-2020 12:03:20.489 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8010"]
+08-Apr-2020 12:06:15.524 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+	java.lang.UnsatisfiedLinkError: C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+		at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+		at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+		at java.lang.ClassLoader.loadLibrary(Unknown Source)
+		at java.lang.Runtime.loadLibrary0(Unknown Source)
+		at java.lang.System.loadLibrary(Unknown Source)
+		at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+		at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+		at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+		at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+		at org.apache.catalina.connector.Connector.setProtocol(Connector.java:615)
+		at org.apache.catalina.connector.Connector.<init>(Connector.java:78)
+		at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:64)
+		at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1234)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1495)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:611)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+08-Apr-2020 12:06:15.783 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.53
+08-Apr-2020 12:06:15.792 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 11 2020 10:01:39 UTC
+08-Apr-2020 12:06:15.847 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.53.0
+08-Apr-2020 12:06:15.857 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+08-Apr-2020 12:06:15.904 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Apr-2020 12:06:15.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+08-Apr-2020 12:06:15.923 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jre1.8.0_91
+08-Apr-2020 12:06:15.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b15
+08-Apr-2020 12:06:15.943 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Apr-2020 12:06:15.953 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\apache-tomcat-8.5.53
+08-Apr-2020 12:06:15.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-8.5.53
+08-Apr-2020 12:06:15.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\apache-tomcat-8.5.53\conf\logging.properties
+08-Apr-2020 12:06:15.977 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Apr-2020 12:06:15.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Apr-2020 12:06:15.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Apr-2020 12:06:15.999 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Apr-2020 12:06:16.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\apache-tomcat-8.5.53
+08-Apr-2020 12:06:16.017 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-8.5.53
+08-Apr-2020 12:06:16.025 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\apache-tomcat-8.5.53\temp
+08-Apr-2020 12:06:16.357 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8010"]
+08-Apr-2020 12:06:16.503 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Apr-2020 12:06:16.532 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1766 ms
+08-Apr-2020 12:06:16.602 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Apr-2020 12:06:16.604 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.53
+08-Apr-2020 12:06:16.642 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\docs]
+08-Apr-2020 12:06:18.192 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [736] milliseconds.
+08-Apr-2020 12:06:18.284 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\docs] has finished in [1,643] ms
+08-Apr-2020 12:06:18.378 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\examples]
+08-Apr-2020 12:06:19.945 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\examples] has finished in [1,572] ms
+08-Apr-2020 12:06:19.946 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager]
+08-Apr-2020 12:06:20.060 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager] has finished in [114] ms
+08-Apr-2020 12:06:20.061 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\manager]
+08-Apr-2020 12:06:20.162 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\manager] has finished in [100] ms
+08-Apr-2020 12:06:20.166 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT]
+08-Apr-2020 12:06:20.253 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT] has finished in [91] ms
+08-Apr-2020 12:06:20.271 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8010"]
+08-Apr-2020 12:06:20.321 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 3787 ms
+08-Apr-2020 12:06:20.340 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+		at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+		at java.net.PlainSocketImpl.bind(Unknown Source)
+		at java.net.ServerSocket.bind(Unknown Source)
+		at java.net.ServerSocket.<init>(Unknown Source)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:421)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:776)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:722)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:343)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:474)
+08-Apr-2020 12:06:20.344 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8010"]
+08-Apr-2020 12:06:21.351 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Apr-2020 12:06:21.437 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8010"]
+08-Apr-2020 12:06:21.449 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8010"]
+08-Apr-2020 12:11:23.990 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+	java.lang.UnsatisfiedLinkError: C:\apache-tomcat-8.5.53\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+		at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+		at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+		at java.lang.ClassLoader.loadLibrary(Unknown Source)
+		at java.lang.Runtime.loadLibrary0(Unknown Source)
+		at java.lang.System.loadLibrary(Unknown Source)
+		at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+		at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+		at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+		at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+		at org.apache.catalina.connector.Connector.setProtocol(Connector.java:615)
+		at org.apache.catalina.connector.Connector.<init>(Connector.java:78)
+		at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:64)
+		at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1234)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+		at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+		at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+		at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1495)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:611)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:662)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:303)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+08-Apr-2020 12:11:24.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/8.5.53
+08-Apr-2020 12:11:24.232 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 11 2020 10:01:39 UTC
+08-Apr-2020 12:11:24.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 8.5.53.0
+08-Apr-2020 12:11:24.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+08-Apr-2020 12:11:24.245 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Apr-2020 12:11:24.248 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+08-Apr-2020 12:11:24.258 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jre1.8.0_91
+08-Apr-2020 12:11:24.265 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_91-b15
+08-Apr-2020 12:11:24.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Apr-2020 12:11:24.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\apache-tomcat-8.5.53
+08-Apr-2020 12:11:24.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\apache-tomcat-8.5.53
+08-Apr-2020 12:11:24.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\apache-tomcat-8.5.53\conf\logging.properties
+08-Apr-2020 12:11:24.293 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Apr-2020 12:11:24.294 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Apr-2020 12:11:24.296 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Apr-2020 12:11:24.299 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Apr-2020 12:11:24.306 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\apache-tomcat-8.5.53
+08-Apr-2020 12:11:24.310 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\apache-tomcat-8.5.53
+08-Apr-2020 12:11:24.311 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\apache-tomcat-8.5.53\temp
+08-Apr-2020 12:11:24.651 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8010"]
+08-Apr-2020 12:11:24.928 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+08-Apr-2020 12:11:24.959 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1846 ms
+08-Apr-2020 12:11:25.066 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Apr-2020 12:11:25.067 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.53
+08-Apr-2020 12:11:25.103 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\docs]
+08-Apr-2020 12:11:26.631 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [914] milliseconds.
+08-Apr-2020 12:11:26.710 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\docs] has finished in [1,606] ms
+08-Apr-2020 12:11:26.711 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\examples]
+08-Apr-2020 12:11:28.833 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\examples] has finished in [2,122] ms
+08-Apr-2020 12:11:28.835 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager]
+08-Apr-2020 12:11:28.948 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\host-manager] has finished in [114] ms
+08-Apr-2020 12:11:28.949 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\manager]
+08-Apr-2020 12:11:29.046 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\manager] has finished in [97] ms
+08-Apr-2020 12:11:29.052 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT]
+08-Apr-2020 12:11:29.135 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\apache-tomcat-8.5.53\webapps\ROOT] has finished in [88] ms
+08-Apr-2020 12:11:29.148 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8010"]
+08-Apr-2020 12:11:29.186 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 4226 ms
